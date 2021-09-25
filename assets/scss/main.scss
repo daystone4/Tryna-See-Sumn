@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#__nuxt,
+#__layout {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $light;
+  color: $accent;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+//
+
+// Headings
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+.title {
+  font-size: clamp(2.5rem, 4vw + 1vw, 5rem);
+  margin-bottom: 1rem;
+}
+
+// Paragraphs
+
+p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+// Lists
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+// Anchor Tags
+
+a {
+  text-decoration: none;
+}
+
+// Images
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}

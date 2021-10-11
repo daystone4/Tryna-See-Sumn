@@ -13,10 +13,19 @@
 $primary: #5b3abd;
 $darkprimary: darken(#5b3abd, 20%);
 $lightprimary: lighten(#5b3abd, 20%);
-$accent: #37392e;
-$lightaccent: #494b41;
-$light: #fffcf9;
+// $accent: #37392e;
+// $lightaccent: #494b41;
+// $light: #fffcf9;
+
+$light: #8280a2;
+$dark: #24232f;
+$accent: #fecb3e;
+$white: #ffffff;
 
 // Box Shadow
 
-$box-shadow: 1px 2px 15px rgba($accent, 80%), 2px 4px 10px rgba($accent, 20%);
+$box-shadow: 1px 2px 15px rgba($dark, 80%), 2px 4px 10px rgba($accent, 20%);
+
+// Transition
+
+$transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);

@@ -11,7 +11,7 @@
             </div>
             <div class="btn-wrapper">
                 <a :href="episode.link" target="_blank">
-                    <TheButton text="Listen Here" />
+                    <RegularButton text="Listen Here" />
                 </a>
             </div>
         </div>
@@ -28,10 +28,11 @@ export default {
 
 <style lang="scss" scoped>
 .card {
-    background: $light;
+    background: $white;
+    text-align: left;
     border-radius: 10px;
     box-shadow: $box-shadow;
-    max-width: 300px;
+    max-width: 350px;
 
     &__img {
         display: grid;
@@ -47,17 +48,19 @@ export default {
         margin-top: 1rem;
 
         .small-paragraph {
-            font-size: clamp(0.95rem, 2vw, 1rem);
+            font-size: clamp(0.85rem, 2vw, 0.9rem);
+            margin-bottom: 0.5rem;
         }
 
         .bold-paragraph {
             font-weight: 600;
             font-size: clamp(1rem, 2vw, 1.25rem);
+            margin-bottom: 0.5rem;
         }
 
         .paragraph {
             overflow:hidden;
-            line-height: 2rem;
+            line-height: 1.6;
             max-height: 8rem;
             -webkit-box-orient: vertical;
             display: block;
@@ -65,6 +68,7 @@ export default {
             overflow: hidden !important;
             text-overflow: ellipsis;
             -webkit-line-clamp: 4;
+            margin-bottom: 0.5rem;
         }
     }
 }

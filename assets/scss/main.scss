@@ -20,11 +20,22 @@ body {
   overflow-x: hidden;
 }
 
+body .nav-active {
+  height: 100vh;
+  overflow: hidden;
+}
+
 // Content
 
-// .content header.active {
-//   background: $primary;
-// }
+.content {
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-active .content {
+  filter: blur(2px);
+}
+
+// app
 
 // Headings
 
@@ -113,4 +124,8 @@ img {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.noscroll {
+  overflow: hidden;
 }

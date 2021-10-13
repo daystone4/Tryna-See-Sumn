@@ -1,7 +1,9 @@
 <template>
-    <div class="content">
+    <div :class="[$store.state.showOverlay ? 'nav-active' : '', 'app-wrapper']">
         <TheHeader />
-        <Nuxt />
+        <div class="content">
+            <Nuxt />
+        </div>
         <TheFooter />
     </div>
 </template>
